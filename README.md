@@ -26,6 +26,8 @@ baitapngay1011/
 │   └── Database/                   # File Script khởi tạo SQL Server tự động
 ├── .gitignore                      # File cấu hình loại bỏ các thư mục tạm (bin, obj)
 └── README.md                       # File báo cáo tổng quan dự án
+```
+
 ---
 
 ## MỤC 3: HÌNH ẢNH KẾT QUẢ CÁC MÀN HÌNH CHỨC NĂNG
@@ -49,4 +51,3 @@ baitapngay1011/
 ### 5. Minh họa An toàn Dữ liệu & Xử lý Lỗi (Exception Handling)
 
 ![Xử lý lỗi](images/05_error_handling.png)
-```
