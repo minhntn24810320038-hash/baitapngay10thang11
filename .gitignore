@@ -1,0 +1,27 @@
+## Visual Studio / .NET Build Outputs
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+
+## User-specific & Temp files
+*.user
+*.userosscache
+*.suo
+*.userlibraries
+*.cache
+*.netmodule
+
+## Local Database / Temp Data
+*.db
+app.db
+*.sqlite3
+
+## VS Code local folder
+.vscode/
+
+## OS generated files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+[Dd]s_[Ss]tore
