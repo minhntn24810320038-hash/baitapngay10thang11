@@ -1,48 +1,49 @@
-# HỆ THỐNG QUẢN LÝ TỔNG HỢP - WINFORMS 3-TIER
+# HỆ THỐNG QUẢN LÝ TỔNG HỢP - WINFORMS 3-TIER ARCHITECTURE
 
 ## MỤC 1: THÔNG TIN SINH VIÊN
 
-- **Họ và tên sinh viên**: Nguyễn Tiến Nhật Minh
-- **Mã sinh viên**: 24810320038
-- **Lớp / Khóa**: Lập trình Windows Forms / C#
+- **Họ và tên sinh viên:** Nguyễn Tiến Nhật Minh
+- **Mã sinh viên:** 24810320038
+- **Tên Đề tài / Bài tập:** Bài tập 6 - Tích hợp 3 ứng dụng WinForms (Quản lý Dự án / Task, Quản lý Garage Ô tô và Đặt phòng Karaoke) trên cùng một mô hình kiến trúc 3 lớp (3-Tier Architecture: GUI - BUS - DAL - DTO).
 
 ---
 
-## MỤC 2: CẤU TRÚC THƯ MỤC SOLUTION (3-TIER ARCHITECTURE)
+## MỤC 2: HƯỚNG DẪN CÀI ĐẶT & CHẠY DỰ ÁN
 
-baitapngay10thang11/
-├── Database/
-│ └── ScriptDB.sql # Script khởi tạo CSDL SQL Server và chèn dữ liệu mẫu
-├── src/ # Mã nguồn dự án (ProjectName)
-│ ├── DTO/ # Chứa các lớp Data Transfer Object
-│ ├── DAL/ # Chứa các lớp Data Access Layer (Truy vấn ADO.NET)
-│ ├── BUS/ # Chứa các lớp Business Logic Layer (Xử lý nghiệp vụ)
-│ ├── Forms/ # GUI - Chứa Form giao diện WinForms (Presentation Layer)
-│ └── Program.cs # Điểm khởi chạy ứng dụng
-├── images/ # Thư mục lưu trữ hình ảnh báo cáo
-│ ├── 01_main_screen.png
-│ ├── 02_crud_screen.png
-│ ├── 03_transaction_screen.png
-│ ├── 04_report_screen.png
-│ └── 05_error_handling.png
-├── README.md # Báo cáo chi tiết bài tập
-└── QuanLyTongHop.sln # Solution File
+1. **Yêu cầu hệ thống:**
+   - Visual Studio / VS Code với .NET SDK.
+   - SQL Server.
+
+2. **Cách khởi chạy:**
+   - Mở Terminal trong VS Code và chuyển vào thư mục `src`:
+     ```powershell
+     cd D:\baitapngay1011\src
+     ```
+   - Chạy lệnh khởi tạo và thực thi ứng dụng (CSDL được khởi tạo tự động):
+     ```powershell
+     dotnet run
+     ```
 
 ---
 
 ## MỤC 3: HÌNH ẢNH KẾT QUẢ CÁC MÀN HÌNH CHỨC NĂNG
 
-1. **Màn hình Chính / Tổng quan hệ thống**:
-   ![Màn hình chính](images/01_main_screen.png)
+### 1. Màn hình chính / Tổng quan hệ thống
 
-2. **Màn hình Quản lý Danh mục (CRUD - Thêm/Sửa/Xóa)**:
-   ![Màn hình CRUD](images/02_crud_screen.png)
+![Màn hình chính](images/01_main_screen.png)
 
-3. **Màn hình Thực thi Nghiệp vụ chính (Lập Hóa đơn / Bán hàng / Chấm công / Đặt phòng)**:
-   ![Màn hình Nghiệp vụ](images/03_transaction_screen.png)
+### 2. Màn hình Quản lý Danh mục (CRUD)
 
-4. **Màn hình Báo cáo - Thống kê**:
-   ![Màn hình Thống kê](images/04_report_screen.png)
+![Màn hình CRUD](images/02_crud_screen.png)
 
-5. **Minh họa An toàn Dữ liệu (Phòng chống SQL Injection / Báo lỗi Transaction Rollback)**:
-   ![Minh họa Xử lý lỗi](images/05_error_handling.png)
+### 3. Màn hình Nghiệp vụ chính (Đặt phòng Karaoke)
+
+![Màn hình Nghiệp vụ](images/03_transaction_screen.png)
+
+### 4. Màn hình Báo cáo - Thống kê (Tiến độ & Cảnh báo trễ hạn)
+
+![Màn hình Báo cáo](images/04_report_screen.png)
+
+### 5. Minh họa An toàn Dữ liệu & Xử lý Lỗi (Exception Handling)
+
+![Xử lý lỗi](images/05_error_handling.png)
