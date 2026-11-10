@@ -8,21 +8,23 @@
 
 ---
 
-## MỤC 2: HƯỚNG DẪN CÀI ĐẶT & CHẠY DỰ ÁN
+## MỤC 2: CẤU TRÚC DỰ ÁN (PROJECT STRUCTURE)
 
-1. **Yêu cầu hệ thống:**
-   - Visual Studio / VS Code với .NET SDK.
-   - SQL Server.
-
-2. **Cách khởi chạy:**
-   - Mở Terminal trong VS Code và chuyển vào thư mục `src`:
-     ```powershell
-     cd D:\baitapngay1011\src
-     ```
-   - Chạy lệnh khởi tạo và thực thi ứng dụng (CSDL được khởi tạo tự động):
-     ```powershell
-     dotnet run
-     ```
+baitapngay1011/
+├── images/ # Thư mục chứa 5 hình ảnh minh họa bài làm
+│ ├── 01_main_screen.png # Màn hình chính / Tổng quan hệ thống
+│ ├── 02_crud_screen.png # Màn hình Quản lý Danh mục (CRUD)
+│ ├── 03_transaction_screen.png # Màn hình Nghiệp vụ (Đặt phòng Karaoke)
+│ ├── 04_report_screen.png # Màn hình Báo cáo - Thống kê trễ hạn
+│ └── 05_error_handling.png # Màn hình Xử lý ngoại lệ / Báo lỗi
+├── src/ # Mã nguồn C# (.NET WinForms 3-Tier)
+│ ├── GUI/ # Tầng giao diện người dùng (Forms, UI Controls)
+│ ├── BUS/ # Tầng xử lý nghiệp vụ (Business Logic Layer)
+│ ├── DAL/ # Tầng truy xuất dữ liệu (Data Access Layer)
+│ ├── DTO/ # Tầng đối tượng truyền dữ liệu (Data Transfer Object)
+│ └── Database/ # File Script khởi tạo SQL Server tự động
+├── .gitignore # File cấu hình loại bỏ các thư mục tạm (bin, obj)
+└── README.md # File báo cáo tổng quan dự án
 
 ---
 
